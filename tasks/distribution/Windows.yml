@@ -1,2 +1,18 @@
 ---
 # tasks file for arillso.fqdn
+
+- block:
+
+    - name: "Windows | Set details via powershell script"
+      script: files/set_domain.ps1 --NewName "{{ inventory_hostname_short }}" --NewFQDN "{{ inventory_hostname }}"
+      notify:
+        - Reboot Windows
+
+    - name: "Linux | Flush Handlers"
+      meta: flush_handlers
+      notify:
+        - Re-gather facts
+
+  when: inventory_hostname_short | lower != ansible_hostname | lower
+  tags:
+    - configuration

@@ -4,6 +4,8 @@
 
 ## Description
 
+The Ansible role sets fqdn, which fell in the inventory. It works with Linux and Windows.
+
 ## Installation
 
 ```bash
@@ -12,14 +14,15 @@ ansible-galaxy install arillso.fqdn
 
 ## Requirements
 
+None
+
 ## Role Variables
 
-| Variable             | Default     | Comments (type)                                   |
-| :---                 | :---        | :---                                              |
-| | | |
-| | | |
+None
 
 ## Dependencies
+
+None
 
 ## Example Playbook
 
@@ -31,6 +34,10 @@ ansible-galaxy install arillso.fqdn
 
 ## Changelog
 
+### 1.0
+
+* initial commit
+
 ## Author
 
 * [Simon Bärlocher](https://sbaerlocher.ch)
@@ -41,4 +48,4 @@ This project is under the MIT License. See the [LICENSE](https://sbaerlo.ch/lice
 
 ## Copyright
 
-(c) 2017, Simon Bärlocher
+(c) 2018, Simon Bärlocher
