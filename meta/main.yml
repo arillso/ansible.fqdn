@@ -7,13 +7,20 @@ galaxy_info:
   platforms:
     - name: EL
       versions:
-        - all
+        - 7
+    - name: Fedora
+      versions:
+        - 29
     - name: Ubuntu
       versions:
-        - all
+        - bionic
+        - cosmic
+        - disco
     - name: Debian
       versions:
-        - all
+        - jessie
+        - stretch
+        - buster
     - name: Windows
       versions:
         - all
