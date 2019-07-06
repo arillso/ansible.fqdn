@@ -33,9 +33,6 @@
       notify:
         - Reboot Linux
 
-    - name: 'Linux : Flush Handlers'
-      meta: flush_handlers
-
   when: inventory_hostname_short | lower != ansible_hostname | lower
   tags:
     - configuration

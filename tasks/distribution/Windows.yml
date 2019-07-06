@@ -5,7 +5,6 @@
     - name: 'Windows : Change the hostname to {{ inventory_hostname_short }}'
       win_hostname:
         name: '{{ inventory_hostname_short }}'
-      register: fqdn_register_reboot
 
   when: inventory_hostname_short | lower != ansible_hostname | lower
   tags:
