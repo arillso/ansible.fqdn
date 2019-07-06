@@ -2,15 +2,14 @@
 # tasks file for arillso.fqdn
 
 - block:
-
-    - name: "Linux | Update the hostname (pt. 1) - hostname cmd"
+    - name: 'Linux : Update the hostname (pt. 1) - hostname cmd'
       become: true
       hostname:
-        name: "{{ inventory_hostname }}"
+        name: '{{ inventory_hostname }}'
       notify:
         - Reboot Linux
 
-    - name: "Linux | Update the hostname (pt. 2) - (/etc/hostname)"
+    - name: 'Linux : Update the hostname (pt. 2) - (/etc/hostname)'
       become: true
       copy:
         content: "{{ inventory_hostname }}{{'\n'}}"
@@ -21,12 +20,12 @@
       notify:
         - Reboot Linux
 
-    - name: "Linux | Update the hostname RedHat, CentOS (pt. 2) - (/etc/sysconfig/network)"
+    - name: 'Linux : Update the hostname (pt. 2) - (/etc/sysconfig/network)'
       become: true
       lineinfile:
         dest: /etc/sysconfig/network
-        line: "HOSTNAME={{ inventory_hostname }}"
-        regexp: "HOSTNAME="
+        line: 'HOSTNAME={{ inventory_hostname }}'
+        regexp: 'HOSTNAME='
         owner: root
         group: root
         mode: 0644
@@ -34,21 +33,8 @@
       notify:
         - Reboot Linux
 
-    - name: "Linux | Update the hostname (pt. 2) - (/etc/hostname)"
-      become: true
-      copy:
-        content: "{{ inventory_hostname }}{{'\n'}}"
-        dest: /etc/hostname
-        owner: root
-        group: root
-        mode: 0644
-      notify:
-        - Reboot Linux
-
-    - name: "Linux | Flush Handlers"
+    - name: 'Linux : Flush Handlers'
       meta: flush_handlers
-      notify:
-        - Re-gather facts
 
   when: inventory_hostname_short | lower != ansible_hostname | lower
   tags:
