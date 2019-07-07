@@ -1,6 +1,6 @@
 # Ansible Role: fqdn
 
-[![Build Status](https://img.shields.io/travis/arillso/ansible.fqdn.svg?branch=master&style=popout-square)](https://travis-ci.org/arillso/ansible.fqdn) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=popout-square)](https://sbaerlo.ch/licence) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-fqdn-blue.svg?style=popout-square)](https://galaxy.ansible.com/arillso/fqdn) [![Ansible Role](https://img.shields.io/ansible/role/d/25136.svg?style=popout-square)](https://galaxy.ansible.com/arillso/fqdn)
+[![Build Status](https://img.shields.io/travis/arillso/ansible.fqdn.svg?branch=master&style=popout-square)](https://travis-ci.org/arillso/ansible.fqdn) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=popout-square)](https://sbaerlo.ch/licence) [![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-fqdn-blue.svg?style=popout-square)](https://galaxy.ansible.com/arillso/fqdn) [![Ansible Role](https://img.shields.io/ansible/role/d/25136.svg?style=popout-square)](https://galaxy.ansible.com/arillso/fqdn)
 
 ## Description
 
