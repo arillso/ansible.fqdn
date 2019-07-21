@@ -4,7 +4,7 @@
 
 ## Description
 
-The Ansible role sets fqdn, which fell in the inventory. It works with Linux and Windows.
+The Ansible role sets fqdn, which fell in Ansible inventory. It works with Linux and Windows.
 
 ## Installation
 
