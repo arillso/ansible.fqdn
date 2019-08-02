@@ -1,20 +1,26 @@
 ---
-
 galaxy_info:
-  author: Simon Baelocher <sbaerlocher@sbaerlocher.ch>
+  author: arillso
   description: Sets Fully qualified domain name (FQDN) using Ansible.
   license: MIT
-  min_ansible_version: 2.5
+  min_ansible_version: 2.8
   platforms:
     - name: EL
       versions:
-        - all
+        - 7
+    - name: Fedora
+      versions:
+        - 29
     - name: Ubuntu
       versions:
-        - all
+        - bionic
+        - cosmic
+        - disco
     - name: Debian
       versions:
-        - all
+        - jessie
+        - stretch
+        - buster
     - name: Windows
       versions:
         - all

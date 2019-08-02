@@ -1,21 +1,8 @@
 ---
 # handlers file for arillso.fqdn
 
-- name: "Reboot Linux"
-  shell: sleep 2 && init 6
-  notify:
-    - Wait for reboot
+- name: 'Reboot Linux'
+  reboot:
 
-- name: "Reboot Windows"
-  action: win_reboot
-
-- name: "Wait for reboot"
-  local_action: wait_for host={{ inventory_hostname }}
-                port=22
-                delay=15
-                timeout=300
-                state=started
-                connect_timeout=15
-
-- name: "Re-gather facts"
-  action: setup
+- name: 'Reboot Windows'
+  win_reboot:
