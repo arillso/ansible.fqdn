@@ -3,7 +3,7 @@ galaxy_info:
   author: arillso
   description: Sets Fully qualified domain name (FQDN) using Ansible.
   license: MIT
-  min_ansible_version: 2.8
+  min_ansible_version: 2.9
   platforms:
     - name: EL
       versions:
@@ -15,7 +15,6 @@ galaxy_info:
       versions:
         - bionic
         - cosmic
-        - disco
     - name: Debian
       versions:
         - jessie
